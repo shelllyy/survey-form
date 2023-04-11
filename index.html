@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" />
+    <title>freeCodeCamp Survey Form</title>
+  </header>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description" class="established">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" action='https://survey-form.freecodecamp.rocks/?name=Jan&email=jan.mlinaric%40gmail.com&age=22&role=student&user-recommend=definitely&mostLike=challenges&prefer=back-end-projects&comment=a'>
+      <fieldset>
+        <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email<input id="email" type="email" placeholder="Enter your Email" required /></label>
+        <label id="number-label">Age <small>(optional)</small> <input id="number" type="number" min="10" max="99" placeholder="Age" /  ></label>
+        <label> Which option best describes your current role
+          <select id="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Teacher</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Have you subscribed to school newsletter </label>
+          <label><input type="radio" class="inline" name="attribute" value="1" checked /> Yes </label>
+          <label><input type="radio" class="inline" name="attribute" value="2" /> No </label>
+      </fieldset>
+      <fieldset>
+        <label> How often do you read the school newsletter ?
+          <select id="dropdown2">
+            <option value="">Select an option</option>
+            <option value="1">Most months </option>
+            <option value="2">Every month </option>
+            <option value="3">Ocassionally</option>
+            <option value="4">Not at all</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Do you believe that the school newsletter is a valuable souce of news and information?<small>(Check all that apply)</small> </label>
+        <label><input type="checkbox" class="inline" value="Extremly valuable" /> Extremly valuable</label>
+        <label><input type="checkbox" class="inline" value="Very valuable" /> Very valuable</label>
+        <label><input type="checkbox" class="inline" value="Moderately valuable" /> Moderately valuable </label>
+        <label><input type="checkbox" class="inline" value="Slightly valuable" /> Slightly valuable </label>
+        <label><input type="checkbox" class="inline" value="Not at all valuable " /> Not at all valuable</label>
+      </fieldset>
+      <fieldset>
+        <label> Any comments or suggestions?
+          <textarea rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
